@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Auto-accept repository invites
-        uses: kbrashears5/github-action-auto-accept-collabs@v1.0.0
+        uses: kbrashears5/github-action-auto-accept-collabs@1.0.1
         with:
           TOKEN: ${{ secrets.GH_TOKEN }}
