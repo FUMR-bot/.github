@@ -1,0 +1,15 @@
+name: Auto-accept repository invites
+
+on:
+  schedule:
+    - cron: 0 * * * *
+  workflow_dispatch:
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-accept repository invites
+        uses: kbrashears5/github-action-auto-accept-collabs@v1.0.0
+        with:
+          TOKEN: ${{ secrets.GH_TOKEN }}
